@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18319179, g: 0.22679496, b: 0.2945614, a: 1}
+  m_IndirectSpecularColor: {r: 0.18319218, g: 0.2267955, b: 0.29456192, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -538,6 +538,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
+--- !u!114 &266731687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 266731679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!1001 &390914024
 Prefab:
   m_ObjectHideFlags: 0
@@ -726,6 +742,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114897789976121696, guid: 17e84b63959a0f74ca4ecbee91c9eebb,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 173703231}
+    - target: {fileID: 114897789976121696, guid: 17e84b63959a0f74ca4ecbee91c9eebb,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 1678018101}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17e84b63959a0f74ca4ecbee91c9eebb, type: 2}
   m_IsPrefabParent: 0
@@ -843,29 +869,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1133928493 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000010406405438, guid: 17e84b63959a0f74ca4ecbee91c9eebb,
-    type: 2}
-  m_PrefabInternal: {fileID: 562263600}
---- !u!114 &1133928499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1133928493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 173703231}
-  damageImage: {fileID: 1678018101}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1001 &1244441584
 Prefab:
   m_ObjectHideFlags: 0
